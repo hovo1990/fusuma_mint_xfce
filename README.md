@@ -76,32 +76,30 @@ $ mkdir -p ~/.config/fusuma        # create config directory
 $ nano ~/.config/fusuma/config.yml # edit config file.
 ```
 
-### Example 1: Gesture Mapping for elementary OS
+### Example 1: Gesture Mapping for Linux Mint XFCE
 
 ```yaml
 swipe:
   3:
     left:
-      command: 'xdotool key alt+Left'
+      command: 'xdotool key alt+Shift+Tab'
     right:
-      command: 'xdotool key alt+Right'
+      command: 'xdotool key alt+Tab'
     up:
-      command: 'xdotool key ctrl+t'
-      threshold: 1.5
+      command: 'xdotool key alt+F10'
     down:
-      command: 'xdotool key ctrl+w'
-      threshold: 1.5
+      command: 'xdotool key alt+F9'
   4:
-    left:
-      command: 'xdotool key super+Left'
-    right:
-      command: 'xdotool key super+Right'
     up:
-      command: 'xdotool key super+a'
+      command: 'xdotool key ctrl+alt+End'
     down:
-      command: 'xdotool key super+s'
+      command: 'xdotool key ctrl+alt+Home'
+    left:
+      command: 'xdotool key ctrl+alt+Left'
+    right:
+      command: 'xdotool key ctrl+alt+Right'
 pinch:
-  2:
+ 2:
     in:
       command: 'xdotool key ctrl+plus'
       threshold: 0.1
